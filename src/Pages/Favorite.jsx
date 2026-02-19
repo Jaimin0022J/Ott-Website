@@ -8,7 +8,7 @@ const Favorite = ({ favorites, removeFromFavorite }) => {
       
       <Link
         to="/"
-        className="border-2 ml-218 px-4 py-2 active:scale-95 hover:scale-105 transition-all duration-300 rounded-xl text-xl inline-block mb-6"
+        className="ml-218 px-4 py-2 active:scale-95 hover:scale-105 transition-all duration-300 bg-gray-100 shadow-2xl font-medium rounded-xl text-xl inline-block mb-6"
       >
         Home <i class="ri-home-wifi-fill"></i>
       </Link>

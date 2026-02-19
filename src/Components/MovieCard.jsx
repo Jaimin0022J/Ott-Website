@@ -17,7 +17,7 @@ export default function MovieCard({
     <div
       
       onClick={() => navigate(`/movie/${movie.id}`)}
-      className="border-2 relative bg-gray-200 rounded-xl cursor-pointer overflow-hidden hover:scale-105 transition-all duration-300"
+      className="relative bg-gradient-to-tl from-gray-500 to-gray-50 rounded-2xl shadow-2xl cursor-pointer overflow-hidden hover:scale-105 transition-all duration-300"
     >
      
       <button
@@ -27,7 +27,7 @@ export default function MovieCard({
             ? onRemove(movie.id)
             : onFavorite(movie);
         }}
-        className={`absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl
+        className={`absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-4xl
         ${isFavorite ? "text-red-500" : "text-black"}`}
       >
         <i

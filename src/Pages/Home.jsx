@@ -50,27 +50,27 @@ const Home = ({ addToFavorite, favorites }) => {
   };
 
   return (
-    <div className="relative flex flex-col w-full px-5 bg-gradient-to-r from-gray-500 to-white">
-      <div className="h-20 border-2 rounded-2xl px-10 mt-8 mx-120 flex  items-center gap-90">
+    <div className="relative flex flex-col w-full px-5 bg-gradient-to-r from-gray-600 to-gray-100">
+      <div className="h-20 rounded-3xl shadow-2xl px-10 py-12 mt-8 mx-100 flex bg-gradient-to-l from-gray-600 to-gray-50  items-center gap-120">
         <form
           onSubmit={handleSearch}
-          className="flex gap-4 border-2 py-2 px-4 rounded-xl"
+          className="flex gap-10 bg-gradient-to-r from-gray-400 to-gray-100 shadow-2xl py-2 px-4 rounded-2xl"
         >
           <input
-            className="outline-none text-black"
+            className="outline-none shadow-2xl font-medium text-black"
             placeholder="Search for movies..."
             type="text"
             value={searchMovie}
             onChange={(e) => setSearchMovie(e.target.value)}
           />
-          <button className="text-xl active:scale-95">
+          <button className="text-xl font-medium active:scale-95">
             Search <i class="ri-search-2-line"></i>
           </button>
         </form>
 
         <Link
           to="/favorite"
-          className="border-2 px-4 py-2 active:scale-95 hover:scale-105 transition-all duration-300 rounded-xl text-xl"
+          className="px-4 py-2 active:scale-95 hover:scale-105 transition-all duration-300 bg-gray-300 shadow-2xl rounded-xl font-semibold text-xl"
         >
           Favorites <i class="ri-heart-line"></i>
         </Link>
@@ -90,7 +90,7 @@ const Home = ({ addToFavorite, favorites }) => {
             {searchMovie ? "Search Results" : "Popular Movies"}
           </h1>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
+          <div className="grid grid-cols-5 gap-10">
             {movies.map((movie) => (
               <MovieCard
                 key={movie.id}
