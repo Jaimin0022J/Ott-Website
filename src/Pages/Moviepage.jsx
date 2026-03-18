@@ -40,7 +40,7 @@ const Moviepage = () => {
   }
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-l from-black to-gray-500 flex flex-col justify-center text-white p-10">
+    <div className="relative min-h-screen bg-linear-to-l from-black to-gray-500 flex flex-col justify-center text-white p-10">
       <button
         onClick={() => navigate(-1)}
         className="active:scale-95 hover:scale-115 transition-all duration-200 absolute top-20 right-100 text-4xl"
@@ -73,7 +73,7 @@ const Moviepage = () => {
                   "_blank"
                 )
               }
-              className="bg-blue-500 w-35 py-3 rounded-2xl active:scale-55 hover:scale-115 transition-all duration-300 shadow-2xl"
+              className="bg-blue-500 w-35 py-3 rounded-2xl hover:shadow-[2px_6px_12px_theme('color.green.800')] active:scale-55 hover:scale-115 transition-all duration-300"
             >
               Watch Now <i class="ri-play-large-line"></i>
             </button>

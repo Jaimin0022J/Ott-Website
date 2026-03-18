@@ -50,8 +50,8 @@ const Home = ({ addToFavorite, favorites }) => {
   };
 
   return (
-    <div className="relative flex flex-col w-full px-5 bg-gradient-to-r from-gray-600 to-gray-100">
-      <div className="h-20 rounded-3xl shadow-2xl px-10 py-12 mt-8 mx-100 flex bg-gradient-to-l from-gray-600 to-gray-50  items-center gap-120">
+    <div className="relative flex flex-col w-full px-5 bg-gradient-to-br from-gray-800 to-gray-400">
+      <div className="fixed z-5 h-20 rounded-3xl shadow-2xl px-10 py-12 mt-8 mx-100 flex bg-gradient-to-l from-gray-600 to-gray-50  items-center gap-120">
         <form
           onSubmit={handleSearch}
           className="flex gap-10 bg-gradient-to-r from-gray-400 to-gray-100 shadow-2xl py-2 px-4 rounded-2xl"
@@ -85,7 +85,7 @@ const Home = ({ addToFavorite, favorites }) => {
           Loading...
         </div>
       ) : (
-        <div className="p-6">
+        <div className="mt-40 p-6">
           <h1 className="text-3xl font-bold text-center mb-8">
             {searchMovie ? "Search Results" : "Popular Movies"}
           </h1>
