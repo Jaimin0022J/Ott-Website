@@ -50,7 +50,7 @@ const Home = ({ addToFavorite, favorites }) => {
   };
 
   return (
-    <div className="relative flex flex-col w-full px-5 bg-gradient-to-br from-gray-800 to-gray-400">
+    <div className="relative flex flex-col w-full px-5 bg-gradient-to-br from-gray-700 to-gray-200">
       <div className="fixed z-5 h-20 rounded-3xl shadow-2xl px-10 py-12 mt-8 mx-100 flex bg-gradient-to-l from-gray-600 to-gray-50  items-center gap-120">
         <form
           onSubmit={handleSearch}
